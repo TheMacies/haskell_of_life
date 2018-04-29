@@ -1,1 +1,1 @@
-# haskell_of_life
+# life
