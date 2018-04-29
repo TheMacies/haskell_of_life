@@ -1,11 +1,10 @@
-## Haskell Setup
+## Features
 
-1. If you haven't already, [install Stack](https://haskell-lang.org/get-started)
-	* On POSIX systems, this is usually `curl -sSL https://get.haskellstack.org/ | sh`
-2. Install the `yesod` command line tool: `stack install yesod-bin --install-ghc`
-3. Build libraries: `stack build`
-
-If you have trouble, refer to the [Yesod Quickstart guide](https://www.yesodweb.com/page/quickstart) for additional detail.
+* Sending boards over http REST
+* Game of life simulation of each board separately ( configurable number of threads)
+* Viewing current state of each board
+* Getting info whether board is still alive and fetching initial board
+* When restarting system, the boards are saved and can be resumed
 
 ## Development
 
@@ -34,10 +33,3 @@ stack test --flag life2:library-only --flag life2:dev
 	* `stack hoogle <function, module or type signature>` to generate a Hoogle database and search for your query
 * The [Yesod cookbook](https://github.com/yesodweb/yesod-cookbook) has sample code for various needs
 
-## Getting Help
-
-* Ask questions on [Stack Overflow, using the Yesod or Haskell tags](https://stackoverflow.com/questions/tagged/yesod+haskell)
-* Ask the [Yesod Google Group](https://groups.google.com/forum/#!forum/yesodweb)
-* There are several chatrooms you can ask for help:
-	* For IRC, try Freenode#yesod and Freenode#haskell
-	* [Functional Programming Slack](https://fpchat-invite.herokuapp.com/), in the #haskell, #haskell-beginners, or #yesod channels.
